@@ -1,0 +1,22 @@
+{
+  "name": "@yaws/env-json",
+  "description": "Load environment variables from .env.json.",
+  "repository": "git://github.com/yaws/env-json.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "rm -rf lib && babel src --out-dir lib",
+    "postpublish": "rm -rf lib",
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@f/foreach-obj": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "tape": "^4.2.2"
+  }
+}
