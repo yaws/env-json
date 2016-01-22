@@ -13,19 +13,17 @@ Load environment variables from .env.json.
     $ npm install @yaws/env-json
 
 ## Usage
+As early as possible, require and call env-json.
 
 ```js
-var envJson = require('@yaws/env-json')
-
+require('@yaws/env-json')()
 ```
 
 ## API
 
-### envJson(arg)
+### envJson(path)
 
-- `arg` -
-
-**Returns:**
+- `path` - path to .env.json, defaults to './'
 
 ## License
 
